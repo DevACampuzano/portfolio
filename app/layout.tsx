@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     description:
       "Portfolio personal de Andrés Campuzano, desarrollador backend. Especializado en el diseño y desarrollo de soluciones tecnológicas personalizadas, tanto en aplicaciones web como móviles.",
     images: {
-      url: "https://opengraph.b-cdn.net/production/images/2acae078-0dd2-4ef6-a4e6-68cb0c3c1d3c.png?token=vKjKCf62IZfbz4vwdPgaVlFP5v7uJXAIexrU_3Ajebg&expires=33290243209",
+      url: "https://opengraph.b-cdn.net/production/images/2acae078-0dd2-4ef6-a4e6-68cb0c3c1d3c.png?token=vKjKCf62IZfbz4vwdPgaVlFP5v7uJXAIexrU_3Ajebg&height=347&width=1200&expires=33290243209",
       height: 347,
       width: 1200,
     },
@@ -63,7 +63,12 @@ export const metadata: Metadata = {
     description:
       "Portfolio personal de Andrés Campuzano, desarrollador backend. Especializado en el diseño y desarrollo de soluciones tecnológicas personalizadas, tanto en aplicaciones web como móviles.",
     images: [
-      "https://opengraph.b-cdn.net/production/images/2acae078-0dd2-4ef6-a4e6-68cb0c3c1d3c.png?token=vKjKCf62IZfbz4vwdPgaVlFP5v7uJXAIexrU_3Ajebg&expires=33290243209",
+      {
+        url: "https://opengraph.b-cdn.net/production/images/2acae078-0dd2-4ef6-a4e6-68cb0c3c1d3c.png?token=vKjKCf62IZfbz4vwdPgaVlFP5v7uJXAIexrU_3Ajebg&height=347&width=1200&expires=33290243209",
+        width: 1200,
+        height: 347,
+        alt: "Andrés Campuzano - Desarrollador Full Stack",
+      },
     ],
   },
 };
