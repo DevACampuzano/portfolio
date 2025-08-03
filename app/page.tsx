@@ -12,7 +12,6 @@ import {
   Header,
   Hero,
   Projects,
-  Skills,
 } from "@/components/schema";
 
 export default function Portfolio() {
