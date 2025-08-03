@@ -1,70 +1,84 @@
-import {
-  Database,
-  ExternalLink,
-  Github,
-  Link,
-  Rocket,
-  Star,
-  Zap,
-} from "lucide-react";
+import { ExternalLink, Github, Globe, Smartphone } from "lucide-react";
 
 const projects = [
   {
-    title: "API REST E-commerce",
+    title: "CatBreeds",
     description:
-      "API completa para sistema de e-commerce con autenticación JWT, gestión de productos, carrito de compras y procesamiento de pagos.",
-    technologies: ["Node.js", "Express", "MongoDB", "JWT", "Stripe"],
-    github: "https://github.com/usuario/ecommerce-api",
-    demo: "https://api-ecommerce-demo.com",
-    status: "Producción",
-    color: "from-electric to-ocean",
-    icon: <Rocket className="h-6 w-6" />,
+      "Aplicación móvil desarrollada con React Native para explorar razas de gatos, ver características detalladas y buscar razas específicas usando TheCatAPI.",
+    technologies: ["React Native", "TypeScript", "TheCatAPI"],
+    github: "https://github.com/DevACampuzano/CatBreeds",
+    demo: null,
+    status: "Completado",
+    color: "from-lavender to-primary",
+    icon: <Smartphone className="h-6 w-6" />,
   },
   {
-    title: "Microservicios de Inventario",
+    title: "Fitzone",
     description:
-      "Sistema de microservicios para gestión de inventario con comunicación asíncrona, caching distribuido y monitoreo.",
+      "Una aplicación móvil para la gestión de clases de fitness y reservas de gimnasio, desarrollada con React Native con un sistema de push notifications.",
     technologies: [
-      "Python",
-      "FastAPI",
-      "PostgreSQL",
-      "Redis",
-      "Docker",
-      "Kubernetes",
+      "React Native",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "Mysql",
     ],
-    github: "https://github.com/usuario/inventory-microservices",
-    demo: "https://inventory-api.com",
-    status: "Desarrollo",
-    color: "from-mint to-accent",
-    icon: <Database className="h-6 w-6" />,
-  },
-  {
-    title: "Sistema de Notificaciones",
-    description:
-      "Servicio escalable de notificaciones en tiempo real con soporte para email, SMS y push notifications.",
-    technologies: ["Go", "Gin", "RabbitMQ", "WebSockets", "AWS SES"],
-    github: "https://github.com/usuario/notification-service",
+    github: [
+      "https://github.com/DevACampuzano/Fitzone",
+      "https://github.com/DevACampuzano/Fitzone_Backend",
+    ],
     demo: null,
     status: "Completado",
     color: "from-sunset to-coral",
-    icon: <Zap className="h-6 w-6" />,
+    icon: <Smartphone className="h-6 w-6" />,
   },
   {
-    title: "API de Analytics",
+    title: "Maps-App",
     description:
-      "Plataforma de analytics para procesar grandes volúmenes de datos con endpoints optimizados y dashboards en tiempo real.",
-    technologies: [
-      "Java",
-      "Spring Boot",
-      "Apache Kafka",
-      "ClickHouse",
-      "Grafana",
-    ],
-    github: "https://github.com/usuario/analytics-api",
-    demo: "https://analytics-dashboard.com",
+      "Aplicación web desarrollada con React y TypeScript para visualización de mapas interactivos utilizando la API de Mapbox.",
+    technologies: ["React", "TypeScript", "Mapbox API"],
+    github: "https://github.com/DevACampuzano/maps-app",
+    demo: "https://maps-app-acampuzanodev.netlify.app/",
     status: "Producción",
-    color: "from-lavender to-primary",
-    icon: <Star className="h-6 w-6" />,
+    color: "from-[#000] to-[#fff]",
+    icon: <Globe className="h-6 w-6" />,
+  },
+  {
+    title: "Rick and Morty App",
+    description:
+      "Aplicación web desarrollada con React y JavaScript para visualizar personajes de la serie Rick and Morty utilizando la API de Rick and Morty. Desarrollada durante una clase impartida en Talento Tech Oriente.",
+    technologies: ["React", "JavaScript", "Rick and Morty API", "MUI"],
+    github: "https://github.com/DevACampuzano/Rick_and_Morty_App",
+    demo: "https://talentotech-rick-and-morty.netlify.app/",
+    status: "Producción",
+    color: "from-[#242424] to-[#0a6fc7]",
+    icon: <Globe className="h-6 w-6" />,
+  },
+  {
+    title: "Dragon Ball App",
+    description:
+      "Aplicación web desarrollada con React y JavaScript para visualizar personajes de la serie Dragon Ball utilizando la API de Dragon Ball. Desarrollada durante una clase impartida en Talento Tech Oriente.",
+    technologies: ["React", "JavaScript", "Dragon Ball API", "MUI"],
+    github: "https://github.com/DevACampuzano/dragon-ball",
+    demo: "https://dragon-ball-talento-tech.netlify.app/",
+    status: "Producción",
+    color: "from-[#101214] to-[#ed6c03]",
+    icon: <Globe className="h-6 w-6" />,
+  },
+  {
+    title: "Pokedex",
+    description:
+      "Aplicación web desarrollada con React y TypeScript para visualizar personajes de la serie Dragon Ball utilizando Poke API. Desarrollada durante una clase impartida en Talento Tech Oriente.",
+    technologies: ["React", "TypeScript", "Poke API", "MUI"],
+    github: [
+      "https://github.com/DevACampuzano/pokedex",
+      "https://github.com/DevACampuzano/pokedex-api",
+    ],
+    demo: "https://pokedex-talento-tech-oriente.netlify.app/",
+
+    status: "Producción",
+    color: "from-[#253237] to-[#222222]",
+    icon: <Globe className="h-6 w-6" />,
   },
 ];
 
@@ -125,24 +139,37 @@ export const Projects = () => (
                     </span>
                   ))}
                 </div>
+
                 <div className="flex gap-2">
-                  <Link
-                    href={project.github}
-                    target="_blank"
-                    className="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium border border-electric text-electric hover:bg-electric hover:text-white transform hover:scale-105 transition-all duration-300"
-                  >
-                    <Github className="h-4 w-4 mr-2" />
-                    Código
-                  </Link>
+                  {typeof project.github === "string" ? (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      className="rounded-md text-sm font-medium border border-electric text-electric hover:bg-electric hover:text-white transform hover:scale-105 transition-all duration-300 p-1"
+                    >
+                      <Github className="h-5 w-5" />
+                    </a>
+                  ) : (
+                    project.github.map((url, index) => (
+                      <a
+                        key={index}
+                        href={url}
+                        target="_blank"
+                        className="rounded-md text-sm font-medium border border-electric text-electric hover:bg-electric hover:text-white transform hover:scale-105 transition-all duration-300 p-1"
+                      >
+                        <Github className="h-5 w-5" />
+                      </a>
+                    ))
+                  )}
+
                   {project.demo && (
-                    <Link
+                    <a
                       href={project.demo}
                       target="_blank"
-                      className="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium border border-lavender text-lavender hover:bg-lavender hover:text-white transform hover:scale-105 transition-all duration-300"
+                      className="rounded-md text-sm font-medium border border-lavender text-lavender hover:bg-lavender hover:text-white transform hover:scale-105 transition-all duration-300 p-1"
                     >
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Demo
-                    </Link>
+                      <ExternalLink className="h-5 w-5" />
+                    </a>
                   )}
                 </div>
               </div>

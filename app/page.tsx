@@ -5,11 +5,14 @@ import {
   AboutMe,
   AnimatedBackground,
   Contact,
+  Courses,
   Education,
   Experience,
   Footer,
   Header,
   Hero,
+  Projects,
+  Skills,
 } from "@/components/schema";
 
 export default function Portfolio() {
@@ -28,13 +31,14 @@ export default function Portfolio() {
       <Hero isVisible={isVisible} />
 
       <AboutMe />
-      {/* <Skills /> */}
 
       <Experience />
 
       <Education />
 
-      {/* <Projects /> */}
+      <Courses />
+
+      <Projects />
 
       <Contact />
 
