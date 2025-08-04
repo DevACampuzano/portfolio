@@ -188,7 +188,7 @@ export const Courses = () => {
                       {course.institution}
                     </p>
 
-                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed text-justify">
                       {course.description}
                     </p>
                     {course.url && (

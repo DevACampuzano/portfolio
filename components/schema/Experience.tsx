@@ -350,7 +350,9 @@ export const Experience = () => (
                               className="flex items-start gap-2 text-gray-600 dark:text-gray-400"
                             >
                               <CheckCircle className="h-4 w-4 text-mint mt-0.5 flex-shrink-0" />
-                              <span className="text-sm">{func}</span>
+                              <span className="text-sm text-justify">
+                                {func}
+                              </span>
                             </li>
                           ))}
                         </ul>
@@ -369,7 +371,9 @@ export const Experience = () => (
                               className="flex items-start gap-2 text-gray-600 dark:text-gray-400"
                             >
                               <Star className="h-4 w-4 text-sunset mt-0.5 flex-shrink-0" />
-                              <span className="text-sm">{achievement}</span>
+                              <span className="text-sm text-justify">
+                                {achievement}
+                              </span>
                             </li>
                           ))}
                         </ul>

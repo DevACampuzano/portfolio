@@ -25,11 +25,11 @@ export const AboutMe = () => (
                   </div>
                 </div>
 
-                <div className="flex-1 text-center lg:text-left">
+                <div className="flex-1 lg:text-left text-justify">
                   <h3 className="text-2xl md:text-3xl font-bold mb-4 bg-gradient-to-r from-electric to-lavender bg-clip-text text-transparent">
                     Andrés Felipe Campuzano Cervantes
                   </h3>
-                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-justify">
                     Ingeniero de Sistemas Egresado de la{" "}
                     <span className="font-semibold text-electric">
                       Universidad de la Costa (CUC)
@@ -42,7 +42,7 @@ export const AboutMe = () => (
                     tecnológicas personalizadas, tanto en aplicaciones web como
                     móviles.
                   </p>
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
                     Capacidad para ofrecer soluciones eficientes, escalables y
                     orientadas a resultados, cumpliendo con altos estándares de
                     calidad. Alta adaptabilidad al trabajo en equipo,

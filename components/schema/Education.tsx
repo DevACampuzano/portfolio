@@ -77,7 +77,7 @@ export const Education = () => (
                   {edu.institution}
                 </p>
 
-                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed text-justify">
                   {edu.description}
                 </p>
 

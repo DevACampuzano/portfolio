@@ -125,7 +125,7 @@ export const Projects = () => (
                   </div>
                 </div>
               </div>
-              <p className="text-base text-gray-600 dark:text-gray-300 mt-3">
+              <p className="text-base text-gray-600 dark:text-gray-300 mt-3 text-justify">
                 {project.description}
               </p>
               <div className="mt-4 space-y-4">
