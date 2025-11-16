@@ -65,11 +65,33 @@ function getElapsedTime(startDate: string, endDate: string = "presente") {
 
 const workExperience = [
   {
+    company: "Topaz",
+    position: "Developer Analyst",
+    startDate: "Octubre 2025",
+    endDate: "Presente",
+    duration: getElapsedTime("Octubre 2025"),
+    link: "https://www.topazevolution.com/es/",
+    technologies: [
+      "TypeScript",
+      "React.js",
+      "React Native",
+      "Node.js",
+      "Expo"
+    ],
+    functions: [
+
+    ],
+    achievements: [
+
+    ],
+    color: "from-[#92fe9d] to-[#00c9ff]",
+  },
+  {
     company: "Fundación IDI",
     position: "Senior Full Stack Developer",
     startDate: "Junio 2022",
-    endDate: "Presente",
-    duration: getElapsedTime("Junio 2022"),
+    endDate: "Octubre 2025",
+    duration: getElapsedTime("Junio 2022", "Octubre 2025"),
     link: "https://fundacionidi.edu.co/",
     technologies: [
       "TypeScript",
@@ -114,8 +136,8 @@ const workExperience = [
     company: "Asoandes",
     position: "Monitor",
     startDate: "Septiembre 2024",
-    endDate: "Presente",
-    duration: getElapsedTime("Septiembre 2024"),
+    endDate: "Agosto 2025",
+    duration: getElapsedTime("Septiembre 2024", "Agosto 2025"),
     link: "https://www.asoandes.org/",
     technologies: [],
     functions: [

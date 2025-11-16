@@ -17,9 +17,8 @@ export const Hero = ({ isVisible }: { isVisible: boolean }) => (
           </h1>
         </div>
         <p
-          className={`text-xl text-gray-600 dark:text-gray-300 mb-8 ${
-            isVisible ? "animate-fade-in" : "opacity-0"
-          }`}
+          className={`text-xl text-gray-600 dark:text-gray-300 mb-8 ${isVisible ? "animate-fade-in" : "opacity-0"
+            }`}
           style={{ animationDelay: "0.3s" }}
         >
           Creo sistemas robustos, escalables y eficientes. Especializado en

@@ -13,13 +13,23 @@ const education = [
   },
   {
     institution: "Universidad de la Costa (CUC)",
-    degree: "Tecnologías de software para la industria 4.0",
+    degree: "Diplomado en Tecnologías de software para la industria 4.0",
     year: "2023",
     certificateImage: "/logo_cuc.png",
     description:
       "Next.js, React.js, Node.js, TypeScript, JavaScript, Amazon Web Services (AWS), Ubuntu",
     color: "from-[#a2161a] to-[#c9a227]",
     // url: "#",
+  },
+  {
+    institution: "Pontificia Universidad Javeriana Cali",
+    degree: "Diplomado en DevOps",
+    year: "2025",
+    certificateImage: "/certificados/Certificado_C5_2025_Diplomado_en_DevOps_CAMPUZANO_CERVANTES_page-0001.jpg",
+    description:
+      "DevOps, Automatización y herramientas, Procesos ágiles y Metodologías, Arquitecturas y Despliegue, Seguridad y DevSecOps, Cultura y Colaboración.",
+    color: "from-[#1352A1] to-[#fff]",
+    url: "/certificados/Certificado_C5_2025_Diplomado_en_DevOps_CAMPUZANO_CERVANTES.pdf",
   },
 ];
 
